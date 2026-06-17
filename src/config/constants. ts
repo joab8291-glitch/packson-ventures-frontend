@@ -1,0 +1,31 @@
+export const BRANDING = {
+  name: 'PACKSON VENTURES',
+  shortName: 'PACKSON',
+  tagline: 'Your Trusted Airtime Partner',
+  email: 'packsonventures@gmail.com',
+  phone: '0702241424',
+  whatsapp: '0702241424',
+  whatsappLink: 'https://api.whatsapp.com/send?phone=254702241424',
+  copyright: 'Copyright © PACKSON VENTURES',
+  social: {
+    tiktok: 'https://www.tiktok.com/@packsonventures',
+    facebook: 'https://www.facebook.com/packsonventures',
+    instagram: 'https://www.instagram.com/packsonventures',
+    twitter: 'https://twitter.com/packsonventures',
+  },
+};
+
+export const AIRTIME_CONFIG = {
+  discountRate: 0.915,
+  feeRate: 0.98,
+  minAmount: 20,
+  maxAmount: 10000,
+  defaultOperator: 'Safaricom',
+  operators: [
+    { name: 'Safaricom', code: 'safaricom', color: 'text-green-700' },
+    { name: 'Airtel', code: 'airtel', color: 'text-red-600' },
+    { name: 'Telkom', code: 'telkom', color: 'text-sky-600' },
+  ],
+};
+
+export const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
